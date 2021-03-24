@@ -1,5 +1,7 @@
 // An example configuration file.
 exports.config = {
+
+  // TODO: what does this do?
   directConnect: true,
 
   // Capabilities to be passed to the webdriver instance.
