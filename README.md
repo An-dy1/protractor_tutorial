@@ -6,3 +6,4 @@
 - TODO: as of March 21, not seeing verbose logs following those steps. Where to call jasmine.callReporter() or whatever
 
 Jasmine console reporter node package: https://www.npmjs.com/package/jasmine-console-reporter
+Github repo, not much more info except for pretty screenshots: https://github.com/onury/jasmine-console-reporter

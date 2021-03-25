@@ -9,4 +9,6 @@ let consoleReporter = new JasmineConsoleReporter({
     emoji: true
 });
 
+jasmine.env.clearReporters();
 jasmine.getEnv().addReporter(consoleReporter);
+jasmine.execute();
