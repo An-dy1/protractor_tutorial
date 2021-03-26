@@ -1,0 +1,27 @@
+{
+  "name": "protractordemo",
+  "version": "1.0.0",
+  "description": "following along with online tutorial",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "protractor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/An-dy1/protractor_tutorial.git"
+  },
+  "author": "andie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/An-dy1/protractor_tutorial/issues"
+  },
+  "homepage": "https://github.com/An-dy1/protractor_tutorial#readme",
+  "devDependencies": {
+    "cucumber": "*",
+    "protractor-cucumber-framework": "^8.0.1"
+  }
+}

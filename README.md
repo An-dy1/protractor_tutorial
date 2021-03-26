@@ -22,3 +22,12 @@ Does NOT need to be named that
 
 Jasmine console reporter node package: https://www.npmjs.com/package/jasmine-console-reporter
 Github repo, not much more info except for pretty screenshots: https://github.com/onury/jasmine-console-reporter
+
+# Protractor and Cucumber:
+
+https://medium.com/@tuliobluz/automa%C3%A7%C3%A3o-com-protractor-pageobject-e-cucumber-122537179ab7
+https://www.npmjs.com/package/protractor-cucumber-framework
+
+# Parameterizing
+
+I parameterized my calculator test according to the process described here: https://stackoverflow.com/a/55909737/11149190
