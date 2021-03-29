@@ -22,6 +22,7 @@
   "homepage": "https://github.com/An-dy1/protractor_tutorial#readme",
   "devDependencies": {
     "cucumber": "*",
-    "protractor-cucumber-framework": "^8.0.1"
+    "protractor-cucumber-framework": "^8.0.1",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0"
   }
 }

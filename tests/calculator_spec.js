@@ -1,42 +1,39 @@
-describe('GIVEN user working with the Angular calculator', function() {
+let homepage = require('../pages/homepage');
 
-    browser.get('http://juliemr.github.io/protractor-demo/');
-    browser.sleep(2000);
+describe('demo calculator tests', function () {
 
-    describe('WHEN user trys to add numbers', function() {
+    it('addition test', function () {
 
-        let parameters = [
-            { description: 'User adds 8 and 2', numberOne: '8', numberTwo: '2', expectedResult: '10'}
-        ];
+        homepage.get('http://juliemr.github.io/protractor-demo/');
 
-        parameters.forEach(({ numberOne, numberTwo, expectedResult }) => {
-            let firstInput = element(by.model('first'));
-            firstInput.sendKeys(numberOne);
+        homepage.enterFirstNumber('4');
 
-            let secondInput = element(by.model('second'));
-            secondInput.sendKeys(numberTwo);
+        homepage.enterSecondNumber('3');
 
-            let goButton = element(by.id('gobutton'));
-            goButton.click();
+        homepage.clickGo();
 
-            // var actualResult = element(by.cssName('ng-binding'));
-            // var resultText = actualResult.getText();
+        homepage.verifyResult('7');
 
-            let actualResult = element(by.cssContainingText('.ng-binding', expectedResult));
+        browser.sleep(2000)
 
-            it ('THEN numbers are added and displayed correctly', function() {
-                expect(actualResult.getText()).toEqual(expectedResult);
-            });
-        })
+    });
 
-        
-    })
+    it('subtraction test', function () {
 
-    describe('WHEN user tries to subtract numbers', function() {
-        it ("does stuff", function() {
+        homepage.get('http://juliemr.github.io/protractor-demo/');
 
-        });
-    })
-    
+        homepage.enterFirstNumber('4');
+
+        homepage.enterSecondNumber('3');
+
+        homepage.clickGo();
+
+        homepage.verifyResult('7');
+
+        browser.sleep(2000)
+
+    });
+
+   
 
 });
