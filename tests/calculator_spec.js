@@ -28,7 +28,7 @@ describe('demo calculator tests', function () {
 
         homepage.clickGo();
 
-        homepage.verifyResult('7');
+        homepage.verifyResult('8');
 
         browser.sleep(2000)
 

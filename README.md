@@ -31,3 +31,28 @@ https://www.npmjs.com/package/protractor-cucumber-framework
 # Parameterizing
 
 I parameterized my calculator test according to the process described here: https://stackoverflow.com/a/55909737/11149190
+
+# Allure report, html docs:
+
+Step 1 : Install jasmine allure reports plugin
+
+https://www.npmjs.com/package/jasmine...​
+
+`npm i -g jasmine-allure-reporter`
+
+Step 2 : Add configuration in conf.js
+
+Step 3 : Run conf.js and check allure-reports are generated - changed destination to target folder
+
+- this will generate an xml report
+
+Step 4 : Add allure command line tool:
+
+- REQUIRES Java 8 or higher installed
+
+https://www.npmjs.com/package/allure-...​
+
+`npm i allure-commandline`
+
+Step 5 : Run command
+`allure serve “location/of/allure-results/folder”`
