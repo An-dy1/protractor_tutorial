@@ -50,7 +50,7 @@ exports.config = {
     return new Promise(function(resolve){
       reporter.afterLaunch(resolve.bind(this, exitCode));
     });
-  },
+  }
 
   // html reporter 2 not generating xml file from which to create the html report; not worried about troubleshooting atm
 
@@ -77,7 +77,7 @@ exports.config = {
   //          testPlatform: platform
   //      };
   //      new HTMLReport().from('./target/html-reporter/xmlresults.xml', testConfig);
-   });
-}
+  //  });
+  // }
 
 };
