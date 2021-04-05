@@ -8,7 +8,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "protractor"
+    "pretest": "rm -rf target/allure-report",
+    "test": "protractor",
+    "posttest": "allure generate target/allure-results --clean -o allure-report || true"
   },
   "repository": {
     "type": "git",

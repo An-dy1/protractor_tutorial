@@ -56,3 +56,5 @@ https://www.npmjs.com/package/allure-...​
 
 Step 5 : Run command
 `allure serve “location/of/allure-results/folder”`
+
+// todo: need to clean the allure-results test xml directory
